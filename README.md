@@ -38,6 +38,12 @@ vagrant@vvv:$ redis-cli ping
 PONG
 ```
 
+## Support
+
+This package has been designed to work with the latest versions of VVV, adhering to the [instructions provided in the official Redis Quick Start Guide](https://redis.io/topics/quickstart), using setup scripts that ship with Redis itself.
+
+That being said, bugs do happen from time to time in software. If you run into trouble, [please open an issue on GitHub](https://github.com/stevegrunwell/vvv-redis/issues/new) and we'll try to help you through it!
+
 ## License
 
 This package is licensed under the [MIT License](license.txt), while Redis itself is released under [the BSD 3-Clause "New" or "Revised" License](https://github.com/antirez/redis/blob/unstable/COPYING).

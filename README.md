@@ -1,8 +1,8 @@
 # Redis Utilities for VVV
 
-This package is meant to automate the installation and configuration of [Redis](https://redis.io/) in [Varying Vagrant Vagrants (VVV)](https://varyingvagrantvagrants.org/) environments.
+This package is meant to automate the installation and configuration of [Redis](https://redis.io/) and [phpredis](https://github.com/phpredis/phpredis) in [Varying Vagrant Vagrants (VVV)](https://varyingvagrantvagrants.org/) environments.
 
-The latest version of Redis will be built and installed from source, providing your VVV environment with a powerful in-memory data store and queuing system.
+The latest version of Redis will be built and installed from source, providing your VVV environment with a powerful in-memory data store and queuing system. Additionally, phpredis will be installed, exposing access to Redis from within your PHP applications.
 
 For more information on how to use Redis, [please see the Redis documentation](https://redis.io/documentation).
 
@@ -40,10 +40,10 @@ PONG
 
 ## Support
 
-This package has been designed to work with the latest versions of VVV, adhering to the [instructions provided in the official Redis Quick Start Guide](https://redis.io/topics/quickstart), using setup scripts that ship with Redis itself.
+This package has been designed to work with the latest versions of VVV, adhering to the [instructions provided in the official Redis Quick Start Guide](https://redis.io/topics/quickstart), using setup scripts that ship with Redis itself. Meanwhile, phpredis is configured to [install the latest stable release via PECL](https://github.com/phpredis/phpredis/blob/develop/INSTALL.markdown#installation-from-pecl).
 
 That being said, bugs do happen from time to time in software. If you run into trouble, [please open an issue on GitHub](https://github.com/stevegrunwell/vvv-redis/issues/new) and we'll try to help you through it!
 
 ## License
 
-This package is licensed under the [MIT License](license.txt), while Redis itself is released under [the BSD 3-Clause "New" or "Revised" License](https://github.com/antirez/redis/blob/unstable/COPYING).
+This package is licensed under the [MIT License](license.txt), while Redis itself is released under [the BSD 3-Clause "New" or "Revised" License](https://github.com/antirez/redis/blob/unstable/COPYING) and phpredis is available under [the PHP License, version 3.01](http://www.php.net/license/3_01.txt).

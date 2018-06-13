@@ -30,3 +30,14 @@ sudo REDIS_CONFIG_FILE="/etc/redis/${REDIS_PORT}.conf" \
     REDIS_DATA_DIR="/var/lib/redis/${REDIS_PORT}" \
     REDIS_EXECUTABLE="$(command -v redis-server)" \
     ./utils/install_server.sh
+
+# Install phpredis via PECL.
+yes '' | sudo pecl install redis || exit 1
+
+# Create redis.ini files for each version of PHP.
+for DIR in /etc/php/*/mods-available; do
+    echo "extension=redis.so" | sudo tee "$DIR/redis.ini" > /dev/null
+done
+
+# Enable the Redis PHP module.
+sudo phpenmod redis

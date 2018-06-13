@@ -1,5 +1,7 @@
 # Redis Utilities for VVV
 
+[![Build Status](https://travis-ci.com/stevegrunwell/vvv-redis.svg?branch=master)](https://travis-ci.com/stevegrunwell/vvv-redis)
+
 This package is meant to automate the installation and configuration of [Redis](https://redis.io/) and [phpredis](https://github.com/phpredis/phpredis) in [Varying Vagrant Vagrants (VVV)](https://varyingvagrantvagrants.org/) environments.
 
 The latest version of Redis will be built and installed from source, providing your VVV environment with a powerful in-memory data store and queuing system. Additionally, phpredis will be installed, exposing access to Redis from within your PHP applications.
